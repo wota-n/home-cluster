@@ -1,0 +1,13 @@
+---
+kubernetes:
+  children:
+    controllers:
+      hosts:
+        "k3s-master01":
+          ansible_user: "jim"
+          ansible_host: "192.168.1.151"
+    workers:
+      hosts:
+        "k3s-worker01":
+          ansible_user: "jim"
+          ansible_host: "192.168.1.152"
